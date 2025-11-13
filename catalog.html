@@ -79,20 +79,23 @@
               <ul class="booking-filter-list">
                 <li class="booking-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="swimmingpool" checked>
-                    Бассейн
+                    <input class="visually-hidden control-input" type="checkbox" name="swimmingpool" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="booking-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="parking" checked>
-                    Парковка
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="booking-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="wi-fi">
-                    Wi-Fi
+                    <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
@@ -102,20 +105,24 @@
               <ul class="booking-filter-list">
                 <li class="booking-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="hotel" checked>
-                    Гостиница
+                    <input class="visually-hidden control-input" type="radio" name="product-group" value="hotel"
+                      checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="booking-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="motel">
-                    Мотель
+                    <input class="visually-hidden control-input" type="radio" name="product-group" value="motel">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li class="booking-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="apartments">
-                    Апартаменты
+                    <input class="visually-hidden control-input" type="radio" name="product-group" value="apartments">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Апартаменты</span>
                   </label>
                 </li>
               </ul>
@@ -123,20 +130,31 @@
 
             <fieldset class="booking-filter-group price-filter">
               <legend class="booking-filter-title">Стоимость, ₽:</legend>
-              <div class="price-filter-values">
-                <label for="min-price" class="visually-hidden">от</label>
-                <input class="control-input price-input min-price" type="number" name="min-price" id="min-price"
-                  value="0">
-                <label for="max-price" class="visually-hidden">до</label>
-                <input class="control-input price-input max-price" type="number" name="max-price" id="max-price"
-                  value="9000">
+              <div class="range">
+                <div class="price-input-container">
+                  <div class="min-price-container">
+                    <label class="visually-hidden price-label" for="min-price" class="visually-hidden">от</label>
+                    <input class="control-input price-input min-price-input" type="number" name="min-price"
+                      id="min-price" value="0">
+                  </div>
+                  <div class="max-price-container">
+                    <label class="visually-hidden price-label" for="max-price" class="visually-hidden">до</label>
+                    <input class="control-input price-input max-price-input" type="number" name="max-price"
+                      id="max-price" value="9000">
+                  </div>
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+                  </div>
+                </div>
               </div>
 
-              <div class="price-filter-volume">
-                <label class="visually-hidden" for="volume">ползунок значений</label>
-                <input class="control-input price-volume-line" type="range" name="volume" id="volume" min="0" max="9000" step="10"
-                  value="7000">
-              </div>
             </fieldset>
 
             <div class="filter-buttons">
@@ -146,6 +164,7 @@
           </form>
         </section>
       </div>
+
 
       <section class="results">
         <div class="results-header">
@@ -184,21 +203,22 @@
                 alt="Ущелье с видом на звезды">
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             </a>
-            <div class="hotel-card-type-n-price">
+            <div class="card-description-container">
               <p class="hotel-card-type">Гостиница</p>
               <p class="hotel-card-price">От 4000 ₽</p>
-            </div>
-            <div class="hotel-card-buttons">
               <a class="button show-more" href="#">подробнее</a>
               <button class="button add-to-favorits" type="button">в избранное</button>
-            </div>
-            <div class="hotel-card-raiting">
               <ul class="raiting-stars">
-                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда"></li>
-                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда"></li>
-                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда"></li>
-                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда"></li>
-                <li class="raiting-star visually-hidden"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда"></li>
+                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда">
+                </li>
+                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда">
+                </li>
+                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда">
+                </li>
+                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда">
+                </li>
+                <li class="raiting-star visually-hidden"><img class="star" src="images/star.svg" width="18" height="17"
+                    alt="Звезда"></li>
               </ul>
               <p class="raiting">Рейтинг: 8,5</p>
             </div>
@@ -209,21 +229,22 @@
                 alt="Скала на фоне радуги">
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
             </a>
-            <div class="hotel-card-type-n-price">
+            <div class="card-description-container">
               <p class="hotel-card-type">Гостиница</p>
               <p class="hotel-card-price">От 5000 ₽</p>
-            </div>
-            <div class="hotel-card-buttons">
               <a class="button show-more" href="#">подробнее</a>
-              <button class="button add-to-favorits added" type="button">в избранном</button>
-            </div>
-            <div class="hotel-card-raiting">
+              <button class="button add-to-favorits added" type="button">в избранное</button>
               <ul class="raiting-stars">
-                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда"></li>
-                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда"></li>
-                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда"></li>
-                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда"></li>
-                <li class="raiting-star visually-hidden"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда"></li>
+                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда">
+                </li>
+                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда">
+                </li>
+                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда">
+                </li>
+                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда">
+                </li>
+                <li class="raiting-star visually-hidden"><img class="star" src="images/star.svg" width="18" height="17"
+                    alt="Звезда"></li>
               </ul>
               <p class="raiting">Рейтинг: 9,2</p>
             </div>
@@ -233,21 +254,23 @@
               <img class="hotel-card-image" src="images/Desert Quail Inn.jpg" width="300" height="212" alt="Скала днём">
               <h3 class="hotel-card-title">Desert Quail Inn</h3>
             </a>
-            <div class="hotel-card-type-n-price">
+            <div class="card-description-container">
               <p class="hotel-card-type">Гостиница</p>
               <p class="hotel-card-price">От 2500 ₽</p>
-            </div>
-            <div class="hotel-card-buttons">
               <a class="button show-more" href="#">подробнее</a>
               <button class="button add-to-favorits" type="button">в избранное</button>
-            </div>
-            <div class="hotel-card-raiting">
+
               <ul class="raiting-stars">
-                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда"></li>
-                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда"></li>
-                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда"></li>
-                <li class="raiting-star visually-hidden"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда"></li>
-                <li class="raiting-star visually-hidden"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда"></li>
+                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда">
+                </li>
+                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда">
+                </li>
+                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда">
+                </li>
+                <li class="raiting-star visually-hidden"><img class="star" src="images/star.svg" width="18" height="17"
+                    alt="Звезда"></li>
+                <li class="raiting-star visually-hidden"><img class="star" src="images/star.svg" width="18" height="17"
+                    alt="Звезда"></li>
               </ul>
               <p class="raiting">Рейтинг: 6,9</p>
             </div>
@@ -258,21 +281,22 @@
                 alt="Скала с крутым обрывом на фоне ночного неба">
               <h3 class="hotel-card-title">GreenTree Inn</h3>
             </a>
-            <div class="hotel-card-type-n-price">
+            <div class="card-description-container">
               <p class="hotel-card-type">Гостиница</p>
               <p class="hotel-card-price">От 1500 ₽</p>
-            </div>
-            <div class="hotel-card-buttons">
               <a class="button show-more" href="#">подробнее</a>
               <button class="button add-to-favorits" type="button">в избранное</button>
-            </div>
-            <div class="hotel-card-raiting">
               <ul class="raiting-stars">
-                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда"></li>
-                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда"></li>
-                <li class="raiting-star visually-hidden"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда"></li>
-                <li class="raiting-star visually-hidden"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда"></li>
-                <li class="raiting-star visually-hidden"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда"></li>
+                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда">
+                </li>
+                <li class="raiting-star"><img class="star" src="images/star.svg" width="18" height="17" alt="Звезда">
+                </li>
+                <li class="raiting-star visually-hidden"><img class="star" src="images/star.svg" width="18" height="17"
+                    alt="Звезда"></li>
+                <li class="raiting-star visually-hidden"><img class="star" src="images/star.svg" width="18" height="17"
+                    alt="Звезда"></li>
+                <li class="raiting-star visually-hidden"><img class="star" src="images/star.svg" width="18" height="17"
+                    alt="Звезда"></li>
               </ul>
               <p class="raiting">Рейтинг: 5,0</p>
             </div>
