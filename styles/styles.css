@@ -16,6 +16,10 @@
   font-display: swap;
 }
 
+/* :root {
+  --color-primary: #c52525;
+} */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -49,21 +53,6 @@ body {
   background-color: #fff;
   color: #333;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-}
-
-.button {
-  font-family: "PT Sans", sans-serif;
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #756157;
-  border: 0;
-  border-radius: 4px;
-  padding: 8px 50px;
-  cursor: pointer;
 }
 
 .page-header {
@@ -166,8 +155,9 @@ body {
 
 .navigation-button {
   width: 160px;
-  font-size: 20px;
-  line-height: 36px;
+  height: 36px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .main-index {
@@ -372,7 +362,7 @@ body {
 
 
 .booking {
-  margin: 96px 0;
+  margin: 96px auto;
   padding: 0;
   text-align: center;
 }
@@ -394,11 +384,15 @@ body {
   margin-bottom: 54px;
 }
 
-
+.booking-button {
+  margin: 0 auto;
+  width: 376px;
+  height: 52px;
+}
 
 .subscribe {
-  margin: 0;
-  padding: 96px 258px 104px 258px;
+  margin: 0 auto;
+  padding: 96px 0 104px 0;
   text-align: center;
 }
 
@@ -429,7 +423,7 @@ body {
 
 .subscribe-input {
   padding: 12px 20px;
-  width: 452px;
+  width: 412px;
   font-size: 18px;
   line-height: 24px;
   color: #000;
@@ -439,7 +433,7 @@ body {
 }
 
 .subscribe-button {
-  background-color: #82B3D3;
+  width: 232px;
   border-radius: 0 4px 4px 0;
 }
 
@@ -512,7 +506,8 @@ body {
   display: block;
 }
 
-.htmlacademy-link {
+.htmlacademy-link,
+.logo-html-academy {
   display: block;
 }
 
@@ -633,24 +628,19 @@ body {
 }
 
 .choose-button {
-  margin: 0;
-  padding: 0;
   font-size: 16px;
   line-height: 20px;
   width: 191px;
   height: 36px;
-  background-color: #82B3D3;
 }
 
 .undone-button {
-  margin: 0;
-  padding: 0;
   font-size: 16px;
   line-height: 20px;
   width: 191px;
   height: 36px;
-  background-color: rgba(0, 0, 0, 0);
 }
+
 
 
 /* -------------PRICE RANGE-------------- */
@@ -829,7 +819,7 @@ body {
   padding: 0;
   margin-left: 70px;
   display: flex;
-  gap: 8px;
+  gap: 10px;
   text-align: center;
 }
 
@@ -885,7 +875,8 @@ body {
   display: grid;
   width: 300px;
   grid-template-columns: 140px 140px;
-  gap: 20px;
+  row-gap: 16px;
+  column-gap: 20px;
   margin: 0;
   padding: 0;
 }
@@ -930,11 +921,8 @@ body {
 }
 
 .add-to-favorits {
-  margin: 0;
-  padding: 8px 20px;
   font-size: 16px;
   line-height: 20px;
-  background-color: #82B3D3;
 }
 
 .raiting-stars {
@@ -973,24 +961,18 @@ body {
   gap: 8px;
 }
 
-.pagination-link {
-  display: block;
+.button.pagination-link {
   width: 60px;
   height: 60px;
-  background-color: #82B3D3;
-  border-radius: 4px;
-  margin: 0;
-  padding: 0;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  align-content: center;
 }
 
-.pagination-current {
+.button.pagination-current,
+.button.pagination-current:hover,
+.button.pagination-current:focus,
+.button.pagination-current:active {
   background-color: #F2F2F2;
   color: #000;
 }

@@ -1,0 +1,74 @@
+.button {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #756157;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  align-content: center;
+  display: block;
+  overflow: hidden;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #615048;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.button:disabled {
+  background-color: #E5E5E5;
+}
+
+.button.secondary {
+  background-color: #82B3D3;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  background-color: #68A2CA;
+}
+
+.button.accepted {
+  background-color: #7DB54F;
+}
+
+.button.accepted:hover,
+.button.accepted:focus {
+  background-color: #6C9E42;
+}
+
+.button.glass {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.button.glass:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button.glass:focus {
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px #83B3D3 solid;
+}
+
+.button.glass:active {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button.glass:disabled {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.1);
+}
