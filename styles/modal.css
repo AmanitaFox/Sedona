@@ -1,0 +1,181 @@
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.80);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+}
+
+.modal-booking {
+  width: 577px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  border: none;
+  background-image: url(../images/close-modal.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+  border: 3px #83B3D3 solid;
+}
+
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
+.modal-title {
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 64px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.booking-input-title {
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #000;
+}
+
+.start-date-container,
+.end-date-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date-field {
+  width: 400px;
+  height: 48px;
+  border: none;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000;
+  padding: 0 20px;
+}
+
+.past-date::after {
+  position: absolute;
+  top: 52px;
+  content: 'Мы не можем отправить вас в прошлое.';
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #FF5757;
+}
+
+.available::after {
+  position: absolute;
+  top: 52px;
+  content: 'На эти даты есть свободные номера. Пока есть.';
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000;
+}
+
+.people-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adults-container,
+.children-container {
+  display: flex;
+  gap: 46px;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  gap: 10px;
+}
+
+.info-svg {
+  position: relative;
+}
+
+.people-number-container {
+  display: flex;
+  justify-content: space-around;
+  width: 110px;
+  height: 48px;
+  background-color: #F2F2F2;
+  align-content: center;
+  border-radius: 4px;
+}
+
+.people-number-container .plus,
+.people-number-container .minus {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+}
+
+.people-number-field {
+  max-width: 50px;
+  display: block;
+  justify-self: center;
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.booking-search-button {
+  height: 60px;
+}
